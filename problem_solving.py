@@ -7,7 +7,7 @@ print(reversed_word)
 
 # Capicalize a letter
 word = input('Enter a word or phrase to be capitalized: ')
-cap_word = word.title()
+cap_word = word.capitalize()
 print(cap_word)
 
 
@@ -27,7 +27,7 @@ print(compressed_string)
 
 
 # Palindrome test
-word = input('Please enter a word to be reversed: ')
+word = input('Please enter a word to be tested as a Palindrome: ')
 reversed_word = ''
 for index in range(len(word)-1,-1,-1):
     reversed_word += word[index]
