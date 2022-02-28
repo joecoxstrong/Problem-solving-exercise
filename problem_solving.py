@@ -6,10 +6,16 @@ for index in range(len(word)-1,-1,-1):
 print(reversed_word)
 
 # Capicalize a letter
-word = input('Enter a word or phrase to be capitalized: ')
-cap_word = word.capitalize()
-print(cap_word)
-
+# import string
+# word = input('Enter a word or phrase to be capitalized: ')
+# cap_words = string.capwords(word)
+# print(cap_words)
+word_or_phrase = input('Enter a word or phrase to be capitalized: ')
+word_list = word_or_phrase.split()
+for i in range(len(word_list)):
+    word_list[i] = word_list[i].capitalize()
+cap_phrase = ' '.join(word_list)    
+print(cap_phrase)
 
 #compress a string of characters e.g. aaabbbbbccccaacccbbbaaabbbaaa => 3a5b4c2a3c3b3a3b3a
 
